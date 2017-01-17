@@ -10,4 +10,5 @@
             * installation on ubuntu
             * [installation on Centos](installation-on-centos.md)
     * [Get started with Docker](get-started-with-docker.md)
+        * [understand images & containers](understand-images--containers.md)
 
