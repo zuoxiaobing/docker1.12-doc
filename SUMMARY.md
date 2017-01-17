@@ -11,4 +11,5 @@
             * [installation on Centos](installation-on-centos.md)
     * [Get started with Docker](get-started-with-docker.md)
         * [understand images & containers](understand-images--containers.md)
+        * [Find and run the whalesay image](find-and-run-the-whalesay-image.md)
 
