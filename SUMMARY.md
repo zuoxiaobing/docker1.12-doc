@@ -23,4 +23,6 @@
         * [Network containers](network-containers.md)
         * [Manage data in containers](manage-data-in-containers.md)
     * [user guide](user-guide.md)
+        * [work with images](work-with-images.md)
+            * Best practices for writing Dockerfiles
 
