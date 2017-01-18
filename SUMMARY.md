@@ -13,4 +13,5 @@
         * [understand images & containers](understand-images--containers.md)
         * [Find and run the whalesay image](find-and-run-the-whalesay-image.md)
         * [Build your own image](build-your-own-image.md)
+        * [Create a Docker Hub account and repository](create-a-docker-hub-account-and-repository.md)
 
