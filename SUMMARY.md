@@ -18,4 +18,5 @@
         * [Learn more](learn-more.md)
     * [Learn by example](learn-by-example.md)
         * [Hello world in a container](hello-world-in-a-container.md)
+        * [Run a simple application](run-a-simple-application.md)
 
