@@ -19,4 +19,5 @@
     * [Learn by example](learn-by-example.md)
         * [Hello world in a container](hello-world-in-a-container.md)
         * [Run a simple application](run-a-simple-application.md)
+        * [Build your own images](build-your-own-images.md)
 
