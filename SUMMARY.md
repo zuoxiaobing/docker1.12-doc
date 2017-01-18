@@ -21,4 +21,5 @@
         * [Run a simple application](run-a-simple-application.md)
         * [Build your own images](build-your-own-images.md)
         * [Network containers](network-containers.md)
+        * [Manage data in containers](manage-data-in-containers.md)
 
