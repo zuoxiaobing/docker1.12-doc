@@ -26,4 +26,6 @@
         * [work with images](work-with-images.md)
             * [Best practices for writing Dockerfiles](best-practices-for-writing-dockerfiles.md)
             * [Create a base image](create-a-base-image.md)
+        * Docker storage drivers
+            * [Understand images, containers, and storage drivers](understand-images-containers-and-storage-drivers.md)
 
