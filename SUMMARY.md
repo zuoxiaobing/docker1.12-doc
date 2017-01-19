@@ -24,5 +24,6 @@
         * [Manage data in containers](manage-data-in-containers.md)
     * [user guide](user-guide.md)
         * [work with images](work-with-images.md)
-            * Best practices for writing Dockerfiles
+            * [Best practices for writing Dockerfiles](best-practices-for-writing-dockerfiles.md)
+            * [Create a base image](create-a-base-image.md)
 
