@@ -28,4 +28,5 @@
             * [Create a base image](create-a-base-image.md)
         * Docker storage drivers
             * [Understand images, containers, and storage drivers](understand-images-containers-and-storage-drivers.md)
+            * Select a storage driver
 
