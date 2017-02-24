@@ -38,7 +38,7 @@ dockers守护程序只能运行一个存储驱动程序，下表显示了支持�
 下表列出了每个存储驱动程序，以及它是否必须与宿主的文件系统相匹配：
 
 
-|Storage driver |Commonly used on |Disabled on                                         |
+|存储驱动 |通常运行在以下文件系统上 |禁用                                         |
 |---------------|-----------------|----------------------------------------------------|
 |`overlay`      |`ext4` `xfs`     |`btrfs` `aufs` `overlay` `zfs` `eCryptfs`|
 |`overlay2`     |`ext4` `xfs`     |`btrfs` `aufs` `overlay` `zfs` `eCryptfs`|
@@ -48,4 +48,40 @@ dockers守护程序只能运行一个存储驱动程序，下表显示了支持�
 |`vfs`          |debugging only   |   N/A                                              |
 |`zfs`          |`zfs` _only_     |   N/A                                              |
 
+“禁用”意味着某些存储驱动程序不能在某些文件系统上运行。
+
+你可以通过命令行 `--storage-driver=<name>`设置存储驱动程序,或通过配置文件`/etc/default/docker`设置
+以下是示例
+
+
+    $ dockerd --storage-driver=devicemapper &
+
+    $ docker info
+
+    Containers: 0
+    Images: 0
+    Storage Driver: devicemapper
+     Pool Name: docker-252:0-147544-pool
+     Pool Blocksize: 65.54 kB
+     Backing Filesystem: extfs
+     Data file: /dev/loop0
+     Metadata file: /dev/loop1
+     Data Space Used: 1.821 GB
+     Data Space Total: 107.4 GB
+     Data Space Available: 3.174 GB
+     Metadata Space Used: 1.479 MB
+     Metadata Space Total: 2.147 GB
+     Metadata Space Available: 2.146 GB
+     Thin Pool Minimum Free Space: 10.74 GB
+     Udev Sync Supported: true
+     Deferred Removal Enabled: false
+     Data loop file: /var/lib/docker/devicemapper/devicemapper/data
+     Metadata loop file: /var/lib/docker/devicemapper/devicemapper/metadata
+     Library Version: 1.02.90 (2014-09-01)
+    Execution Driver: native-0.2
+    Logging Driver: json-file
+    Kernel Version: 3.19.0-15-generic
+    Operating System: Ubuntu 15.04
+    <output truncated>
+你的存储驱动器的选择可以影响你的容器应用程序的性能。因此，了解不同的存储驱动程序选项并为应用程序选择合适的驱动程序是很重要的。稍后，在本页中，您将找到一些选择合适的驱动程序的建议。
 
